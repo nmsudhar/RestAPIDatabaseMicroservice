@@ -1,19 +1,20 @@
-Rest API With Spring Boot and MongoDB
+**Rest API With Spring Boot and MongoDB**
 
-Technology Stack
+**Technology Stack**
 * Maven, Spring Boot, Spring Web;
 * Spring Data MongoDB, lombok;
 * MongoDB embedded database;
 * Spring Security (as basic authentication).
 
-Run Application.java
-
+**Run:-** Application.java spring boot
+```
 Get : localhost:8082/database/currencies
 Auth      : Basic Auth
 User Name : user
 Password  : user
- 
-Result
+``` 
+Result :-
+```
 [
     {
         "currencyName": "BTC",
@@ -94,15 +95,15 @@ Result
         ]
     }
 ]
-
-
-Post localhost:8082/database/currencies
+```
+```
+Post:- localhost:8082/database/currencies
 Headers : Auth         :`Basic Auth
           Content-Type : application/json
           User Name    : user
           Password     : user
+	  
 Payload:- 
-
 {
 	"currencyName" : "LTC", 
 	"updatedDate" : "20180507", 
@@ -114,3 +115,4 @@ Payload:-
 	{"time":"1530", "price":"33.56"}
 	]
 }
+```
